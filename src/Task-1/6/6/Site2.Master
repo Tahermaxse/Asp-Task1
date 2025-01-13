@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="_33.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            text-align:center;
+           background:rgba(0,0,0,0.2);
+        }
+        .auto-style2 {
+            width: 28px;
+            height: 35px;
+           
+        }
+        .auto-style3 {
+            width: 1498Px;
+            height: 385px;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+        .auto-style6 {
+            text-align:center;
+            width: 546px;
+            height: 26px;
+            
+        }
+        .auto-style7 {
+            height: 26px;
+            width: 546px;
+            text-align:center;
+        }
+        .auto-style8 {
+            height: 26px;
+            width: 546px;
+            text-align:center;
+        }
+        legend{
+            text-align:center;
+            
+        }
+        a{
+            color:#00CC00;
+            font-size:large;
+        }
+        b{
+            color:#00CCFF;
+            font-size:large;
+        }
+       q{
+           color:#FF6600;
+           font-size:large;
+       }
+       p{
+           font-weight:bold;
+           font-size:large;
+       }
+       g{
+           color:gray;
+           font-size:large;
+       }
+        .auto-style9 {
+            height: 172px;
+        }
+        u{
+            background-color:lightgrey;
+        }
+        .container{
+            position:relative;
+            height:100%;
+            width:200px;
+        }
+        .overlap{
+            position: absolute; 
+             top: 20%; 
+            left: 10%;
+            transform: translate(95%, -50%); 
+            color: white; 
+            font-size: 4vw; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            text-align: center;
+            font-weight: bold;
+            white-space:nowrap;
+        }
+        .overlap2{
+            position: absolute; 
+             top: 35%; 
+            left: 10%;
+            transform: translate(30%, -50%); 
+            color: white; 
+            font-size: 2vw; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            text-align: center;
+            font-weight: bold;
+            white-space:nowrap;
+        }
+
+        .auto-style10 {
+            text-align: center;
+            width: 546px;
+            height: 34px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+            <table class="auto-style1" >
+                <tr>
+                    <td>Progress Telerik&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    <td>
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="156px">
+                            <asp:ListItem>Products</asp:ListItem>
+                            <asp:ListItem>website</asp:ListItem>
+                            <asp:ListItem>application</asp:ListItem>
+                            <asp:ListItem>siber security</asp:ListItem>
+                            <asp:ListItem>.net frameowrk</asp:ListItem>
+                            <asp:ListItem>html</asp:ListItem>
+                            <asp:ListItem>php</asp:ListItem>
+                            <asp:ListItem></asp:ListItem>
+                        </asp:DropDownList>
+                        Enterprise</td>
+                    <td>Free Trials</td>
+                    <td>Pricing</td>
+                    <td>Supporrt &amp; Learning</td>
+                    <td>About us </td>
+                    <td>
+                        <img alt="" class="auto-style2" src="img/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg" /></td>
+                    <td>Your account</td>
+                    <td>Telerik plateform</td>
+                    <td>&nbsp;</td>
+                    
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="container">
+                      
+                            <img alt="" class="auto-style3" src="img/sc.jpg" />
+                            <div class="overlap">Develop Experience  </div>
+                  <div class="overlap2">UI Framework and app development tools that 2.1 million developers love   </div>
+
+            </div>        
+        
+         <table class="auto-style4">
+        <tr>
+            <td class="auto-style10" ><fieldset class="auto-style9"><legend ><a>.NET</a></legend>
+                <p>Dev Creaft</p>
+                
+                .NET UI control,reporting and developer
+                <br />
+                productivity&nbsp; tools<br />
+                <br />
+                <br />
+                <asp:Button ID="Button1" runat="server" BackColor="#00CC00" Text="Learn more" ForeColor="White" BorderColor="#00CC00" />
+                <br />
+                </fieldset></td>
+            <td class="auto-style10"><fieldset><legend ><b>NATIVE MOBILE</b></legend><p>Native Script</p>
+                Open source framework for building<br />
+&nbsp;truly
+                native mobile apps with Angular,<br />
+                TypeScript or
+                JavaScript<br />
+                <br />
+                <asp:Button ID="Button2" runat="server" BackColor="#00CCFF" Text="Learn More" ForeColor="White" BorderColor="#00CCFF" />
+                <br />
+                </fieldset></td>
+            <td class="auto-style10"><fieldset><legend><q>HTML5</q></legend>
+                <p>Kendo UI</p>JavaScript,HTML 5 UI widgets for 
+                <br />
+                responsive web and data<br />
+&nbsp;visualization<br />
+                <br />
+                <asp:Button ID="Button4" runat="server" Text="Learn More" BackColor="#FF6600" ForeColor="White" BorderColor="#FF6600" />
+                </fieldset></td>
+        </tr>
+        <tr>
+            <td class="auto-style6"><fieldset><legend ><g>CMS</g></legend><p>Progress Sitefinity</p>
+                Web Content Management and
+                <br />
+                Customer Analytics for managing and<br />
+                optimizing digital experience<br />
+                <br />
+                <asp:Button ID="Button3" runat="server" Text="Learn More" BackColor="Gray" ForeColor="White" BorderColor="Gray" />
+                </fieldset></td>
+            <td class="auto-style8"><fieldset><legend ><g>MOBILE</g></legend><p>Telerik Plateform</p>Complete cross-plateform solution to
+                <br />
+                design ,build, deploye , manage and
+                <br />
+                measure all your mobile apps<br />
+                <br />
+                <asp:Button ID="Button5" runat="server" Text="Learn More" BackColor="Gray" ForeColor="White" BorderColor="Gray" />
+                </fieldset></td>
+            <td class="auto-style7"><fieldset><legend ><g>TESTING</G></legend>
+                <p>Test Studio</p>
+                Release better quality software faster<br />
+&nbsp;with&nbsp;an intutive and easy to use<br />
+&nbsp;test automatic solution<br />
+                <br />
+                <asp:Button ID="Button6" runat="server" Text="Learn More" BackColor="Gray" ForeColor="White" BorderColor="Gray" />
+                </fieldset></td>
+        </tr>
+    </table>
+            </fieldset>
+    </form>
+   
+</body>
+</html>

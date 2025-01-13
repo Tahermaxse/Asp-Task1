@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_33.Site1" %>
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Master Page Layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding: 20px;
+            vertical-align: top;
+            border: 1px solid #ddd;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+        .card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="MainContent" runat="server">
+            <table>
+                <tr>
+                    <td>
+                        <div class="card">
+                            <h3>DevCraft</h3>
+                            <p>.NET UI controls, reporting, and developer productivity tools</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <h3>NativeScript</h3>
+                            <p>Open-source framework for building truly native mobile apps with Angular, TypeScript, or JavaScript</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <h3>Kendo UI</h3>
+                            <p>JavaScript, HTML5 UI widgets for responsive web and data visualization</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card">
+                            <h3>Sitefinity</h3>
+                            <p>Web Content Management and Customer Analytics for managing and optimizing digital experiences</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <h3>Telerik Platform</h3>
+                            <p>Complete cross-platform solution to design, build, deploy, manage, and measure all your mobile apps</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card">
+                            <h3>Test Studio</h3>
+                            <p>Release better quality software faster with an intuitive and easy-to-use test automation solution</p>
+                            <button>Learn More</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
+
